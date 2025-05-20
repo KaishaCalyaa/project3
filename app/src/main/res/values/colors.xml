@@ -1,10 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-        <color name="purple_200">#E1BEE7</color>
-        <color name="purple_500">#9C27B0</color>
-        <color name="purple_700">#7B1FA2</color>
-
+    <color name="toolbar_blue">#B3E5FC</color>
+    <color name="tab_background">#E1F5FE</color>
+    <color name="tab_text">#90A4AE</color>
+    <color name="tab_selected_text">#455A64</color>
+    <color name="tab_indicator">#F48FB1</color>
+    <color name="soft_blue_background">#B2D9F7</color>
 
 </resources>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    card_view:cardCornerRadius="16dp"
+    card_view:cardElevation="6dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp">
+
+        <!-- Gambar Workout -->
+        <ImageView
+            android:id="@+id/img_workout"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/fit_pushup"
+            android:contentDescription="Workout Image"
+            android:layout_alignParentTop="true" />
+
+        <!-- Tombol Favorit -->
+        <ImageView
+            android:id="@+id/btn_favorite"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/ic_favorite_border"
+            android:contentDescription="Favorite"
+            android:layout_gravity="end"
+            />
+
+        <!-- Judul -->
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img_workout"
+            android:layout_marginTop="8dp"
+            android:text="Push-Up"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#333" />
+
+        <!-- Deskripsi -->
+        <TextView
+            android:id="@+id/txt_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_title"
+            android:layout_marginTop="4dp"
+            android:text="Latihan dada dan trisep"
+            android:textSize="14sp"
+            android:textColor="#666" />
+
+        <!-- Manfaat -->
+        <TextView
+            android:id="@+id/txt_benefits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_description"
+            android:layout_marginTop="4dp"
+            android:text="Meningkatkan kekuatan otot tubuh bagian atas"
+            android:textSize="14sp"
+            android:textColor="#666" />
+
+        <!-- Langkah-langkah -->
+        <TextView
+            android:id="@+id/txt_steps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_benefits"
+            android:layout_marginTop="4dp"
+            android:text="1. Posisikan tubuh...\n2. Tekuk lengan..."
+            android:textSize="14sp"
+            android:textColor="#666" />
+
+        <!-- Sets dan Reps -->
+        <TextView
+            android:id="@+id/txt_sets_reps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_steps"
+            android:layout_marginTop="4dp"
+            android:text="3 sets x 15 reps"
+            android:textSize="14sp"
+            android:textColor="#666" />
+
+        <!-- Timer -->
+        <TextView
+            android:id="@+id/txt_timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_sets_reps"
+            android:layout_marginTop="4dp"
+            android:text="00:30"
+            android:textSize="14sp"
+            android:textColor="#666" />
+
+        <!-- Tombol Mulai -->
+        <Button
+            android:id="@+id/btn_start_timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_timer"
+            android:layout_marginTop="8dp"
+            android:text="Mulai"
+            android:backgroundTint="#F9B2BC"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

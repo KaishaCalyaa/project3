@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="32dp"
+    android:background="@drawable/bg_gradient">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/logo_image"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:contentDescription="Logo FitVibes"
+        android:src="@drawable/fit_logo"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.Corner.Circle" />
+
+    <TextView
+        android:id="@+id/tv_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to FitVibes!"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#344955"
+        android:layout_marginTop="24dp" />
+
+    <TextView
+        android:id="@+id/tv_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your journey starts today!"
+        android:textSize="18sp"
+        android:textColor="#627D98"
+        android:layout_marginTop="8dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_start_workout"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:text="Mulai Sekarang"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#F9B2BC"
+        android:elevation="6dp"
+        app:cornerRadius="24dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_profile"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:text="Profil Saya"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#F9B2BC"
+        android:elevation="3dp"
+        app:cornerRadius="24dp" />
+
+</LinearLayout>

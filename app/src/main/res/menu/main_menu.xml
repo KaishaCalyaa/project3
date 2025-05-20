@@ -9,6 +9,7 @@
         app:showAsAction="always"
         android:iconTint="@color/white"/>
     <item
+
         android:id="@+id/action_menu2"
         android:title="Menu 2"
         app:showAsAction="never" />
